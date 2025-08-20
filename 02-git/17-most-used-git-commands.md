@@ -98,13 +98,20 @@ Undo a specific commit by creating a new commit that reverses the changes.
 ### 12. `git reset`
 git reset
 git reset is used to undo changes by moving the current branch pointer to a different commit. It can also affect the staging area and working directory, depending on the mode you use.
+
 git reset --soft HEAD~1  Use this if you want to undo the last commit but keep the changes staged for a new commit.
+
 git reset HEAD~1  Use this if you want to undo the last commit and re-edit the files before committing again.
+
 git reset --hard HEAD~1 Use this with caution. It will permanently delete changes after the target commit.
+
+----
 
 ### 13. `git cherrypick`
 Apply a specific commit from another branch into your current branch.
 git cherrypick commit_hash it will pick that particular change from other branch to working/current branch.
+
+---
 
 
 
